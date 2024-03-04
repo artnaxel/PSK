@@ -17,8 +17,8 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="mybatis.xml/StudentGroupMapper.xml"/>
-        <mapper resource="mybatis.xml/StudentMapper.xml"/>
-        <mapper resource="mybatis.xml/CourseMapper.xml"/>
+        <mapper resource="mybatis/StudentGroupMapper.xml"/>
+        <mapper resource="mybatis/StudentMapper.xml"/>
+        <mapper resource="mybatis/CourseMapper.xml"/>
     </mappers>
 </configuration>

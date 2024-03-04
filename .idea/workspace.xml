@@ -10,30 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc2afabe-44d3-4cab-9aa8-a5dbdd710883" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/persistence/CourseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/persistence/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/persistence/StudentGroupDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/usecases/CourseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/usecases/StudentGroupService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/usecases/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/MyBatisResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/usecases/CourseServiceMyBatis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/usecases/StudentGroupsMyBatis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/usecases/StudentServiceMyBatis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/MyBatisConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/students-ds.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/myBatis/groups.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b7263c9-77b3-4e24-a4c7-df4b515be0a5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5b7263c9-77b3-4e24-a4c7-df4b515be0a5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/entities/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/entities/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/entities/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/entities/StudentGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/entities/StudentGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/CourseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/CourseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/StudentGroupMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/StudentGroupMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/StudentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/persistence/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/persistence/Resources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/standalone.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/CourseMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/StudentGroupMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/StudentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/model/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/model/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/model/StudentGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/usecases/StudentGroupsMyBatis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/usecases/StudentGroupsMyBatis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/MyBatisConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MyBatisConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +75,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "Errors",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -101,6 +90,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aleksandra\Desktop\VU_PS\3k_2s\PskDemo\PskDemo\src\main\resources" />
       <recent name="C:\Users\Aleksandra\Desktop\VU_PS\3k_2s\PskDemo\PskDemo\src\main\webapp" />
     </key>
   </component>
@@ -195,7 +185,7 @@
       <workItem from="1709470028720" duration="1474000" />
       <workItem from="1709471747835" duration="3704000" />
       <workItem from="1709475793046" duration="4515000" />
-      <workItem from="1709570900911" duration="9142000" />
+      <workItem from="1709570900911" duration="11293000" />
     </task>
     <servers />
   </component>

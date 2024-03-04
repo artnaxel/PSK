@@ -35,7 +35,7 @@ public class StudentGroupsMyBatis {
     @Transactional
     public String createStudentGroup() {
         studentGroupMapper.insert(studentGroup);
-        return "/myBatis/teams?faces-redirect=true";
+        return "/myBatis/groups?faces-redirect=true";
     }
 
 }

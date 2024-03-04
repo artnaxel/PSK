@@ -11,10 +11,11 @@
                         password="sa">
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="org.vu.pskdemo.mybatis.model" targetProject="MAVEN" />
+        <javaModelGenerator targetPackage="org.vu.pskdemo.mybatis.model" targetProject="src/main/java" />
 
-        <sqlMapGenerator targetPackage="org.vu.pskdemo.mybatis.xml" targetProject="MAVEN" />
-        <javaClientGenerator type="XMLMAPPER" targetPackage="org.vu.pskdemo.mybatis.dao" targetProject="MAVEN" />
+        <sqlMapGenerator targetPackage="mybatis" targetProject="src/main/resources" />
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="org.vu.pskdemo.mybatis.dao" targetProject="src/main/java" />
 
 
         <table schema="public" tableName="studentGroup">
@@ -22,7 +23,6 @@
         </table>
         <table schema="public" tableName="student">
             <generatedKey column="id" identity="true" sqlStatement="JDBC" />
-            <ignoreColumn column="opt_lock_version" />
         </table>
         <table schema="public" tableName="course">
             <generatedKey column="id" identity="true" sqlStatement="JDBC" />

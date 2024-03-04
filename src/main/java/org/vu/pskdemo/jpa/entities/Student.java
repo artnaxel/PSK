@@ -1,10 +1,9 @@
-package org.vu.pskdemo.entities;
+package org.vu.pskdemo.jpa.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.List;
-import java.util.UUID;
 
 @Entity
 @Data

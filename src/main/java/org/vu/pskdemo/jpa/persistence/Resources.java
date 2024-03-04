@@ -1,4 +1,4 @@
-package org.vu.pskdemo.persistence;
+package org.vu.pskdemo.jpa.persistence;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.context.RequestScoped;

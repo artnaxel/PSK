@@ -1,14 +1,13 @@
-package org.vu.pskdemo.entities;
+package org.vu.pskdemo.jpa.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.List;
-import java.util.UUID;
 
 @Entity
 @Data
-public class Course {
+public class StudentGroup {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,7 +22,6 @@ public class Course {
     @Basic
     private Integer grade;
 
-    @ManyToMany(mappedBy = "courses")
+    @OneToMany(mappedBy = "studentGroup")
     private List<Student> students;
-
 }

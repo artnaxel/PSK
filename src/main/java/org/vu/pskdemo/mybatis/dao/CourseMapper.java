@@ -1,6 +1,6 @@
 package org.vu.pskdemo.mybatis.dao;
 
-import org.apache.ibatis.annotations.Mapper;
+import org.mybatis.cdi.Mapper;
 import org.vu.pskdemo.mybatis.model.Course;
 
 import java.util.List;

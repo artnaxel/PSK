@@ -1,5 +1,5 @@
 <datasources>
-    <datasource jndi-name="java:/DemoDataSource" pool-name="DemoDataSourcePool" enabled="true" use-java-context="true">
+    <datasource jndi-name="java:/StudentsDataSource" pool-name="StudentsDataSourcePool" enabled="true" use-java-context="true">
         <driver>h2</driver>
         <connection-url>jdbc:h2:~/h2database/DemoDB;AUTO_SERVER=true</connection-url>
         <security>

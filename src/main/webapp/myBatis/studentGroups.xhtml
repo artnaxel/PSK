@@ -6,7 +6,7 @@
 >
 <h:head/>
 <h:body>
-    <h2>Groups:</h2>
+    <h2>Student Groups (MyBatis):</h2>
     <ol>
         <ui:repeat value="#{studentGroupsMyBatis.allStudentGroups}" var="group">
             <li><h:link value="#{group.title}" outcome="students?groupId=#{group.id}" /></li>
@@ -16,7 +16,7 @@
         <h:inputText value="#{studentGroupsMyBatis.studentGroup.title}" required="true" />
         <h:inputText value="#{studentGroupsMyBatis.studentGroup.capacity}" required="true" />
         <h:inputText value="#{studentGroupsMyBatis.studentGroup.grade}" required="true" />
-        <h:commandButton value="Add new team" action="#{studentGroupsMyBatis.createStudentGroup}" />
+        <h:commandButton value="Add new group" action="#{studentGroupsMyBatis.createStudentGroup}" />
     </h:form>
     <h:link value="Back to index" outcome="/index"/>
 </h:body>

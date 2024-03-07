@@ -1,12 +1,88 @@
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
->
-<h:head/>
+      xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        ol {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .form-group input[type="text"] {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .command-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .command-button:hover {
+            background-color: #45a049;
+        }
+        .link {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+    </style>
+</h:head>
 <h:body>
-    <h2>Teams:</h2>
-    <h:link outcome="myBatis/groups" value="MyBatis implementation"/>
+    <h2>Student Groups:</h2>
+    <ol>
+        <ui:repeat value="#{studentGroupJpa.allStudentGroups}" var="studentGroup">
+            <li><h:link value="#{studentGroup.title}" outcome="students?groupId=#{studentGroup.id}" /></li>
+        </ui:repeat>
+    </ol>
+    <h:form>
+        <div class="form-group">
+            <label>Title</label>
+            <h:inputText value="#{studentGroupJpa.studentGroup.title}" required="true" />
+        </div>
+        <div class="form-group">
+            <label>Capacity</label>
+            <h:inputText value="#{studentGroupJpa.studentGroup.capacity}" required="true" >
+                <f:validateLongRange minimum="1" maximum="100" />
+            </h:inputText>
+        </div>
+        <div class="form-group">
+            <label>Grade</label>
+            <h:inputText value="#{studentGroupJpa.studentGroup.grade}" required="true">
+                <f:validateLongRange minimum="1" maximum="12" />
+            </h:inputText>
+        </div>
+        <h:commandButton styleClass="command-button" value="Add new group" actionListener="#{studentGroupJpa.createStudentGroup}" action="index?faces-redirect=true"/>
+    </h:form>
+    <h:link styleClass="link" outcome="myBatis/studentGroups" value="MyBatis implementation"/>
 </h:body>
 </html>

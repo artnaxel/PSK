@@ -6,6 +6,9 @@ import lombok.Data;
 import java.util.List;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "StudentGroup.findAll", query = "select g from StudentGroup as g")
+})
 @Data
 public class StudentGroup {
 

@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc2afabe-44d3-4cab-9aa8-a5dbdd710883" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/myBatis/studentGroups.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/myBatis/studentGroups.xhtml" afterDir="false" />
@@ -181,7 +180,7 @@
       <workItem from="1709736799675" duration="786000" />
       <workItem from="1709745360323" duration="586000" />
       <workItem from="1709824199410" duration="3615000" />
-      <workItem from="1709894142721" duration="480000" />
+      <workItem from="1709894142721" duration="1418000" />
     </task>
     <servers />
   </component>

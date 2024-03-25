@@ -15,7 +15,7 @@ public class StudentDao {
         this.em.persist(student);
     }
 
-    public Student findOne(Integer id){
+    public Student findOne(Long id){
         return em.find(Student.class, id);
     }
 

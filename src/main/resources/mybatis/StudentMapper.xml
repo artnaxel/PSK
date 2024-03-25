@@ -63,4 +63,7 @@
     select ID, NAME, SURNAME, STUDENTGROUP_ID
     from PUBLIC.STUDENT
   </select>
+  <select id="selectByGroupId" resultType="org.vu.pskdemo.mybatis.model.Student">
+    SELECT * FROM PUBLIC.STUDENT WHERE STUDENTGROUP_ID= #{groupId}
+  </select>
 </mapper>

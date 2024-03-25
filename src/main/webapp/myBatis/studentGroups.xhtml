@@ -11,7 +11,7 @@
         <h2>Student Groups (MyBatis):</h2>
         <ol>
             <ui:repeat value="#{studentGroupsMyBatis.allStudentGroups}" var="studentGroup">
-                <li><h:link value="#{studentGroup.title}" outcome="students?groupId=#{studentGroup.id}" /></li>
+                <li><h:link value="#{studentGroup.title}" outcome="students?studentGroupId=#{studentGroup.id}" /></li>
             </ui:repeat>
         </ol>
         <h:form>
@@ -31,7 +31,7 @@
                     <f:validateLongRange minimum="1" maximum="12" />
                 </h:inputText>
             </div>
-            <h:commandButton styleClass="command-button" value="Add new group" actionListener="#{studentGroupsMyBatis.createStudentGroup}" action="index?faces-redirect=true"/>
+            <h:commandButton styleClass="command-button" value="Add new group" action="#{studentGroupsMyBatis.createStudentGroup}"/>
         </h:form>
         <h:link styleClass="link" outcome="/index" value="Back to index"/>
     </h:body>

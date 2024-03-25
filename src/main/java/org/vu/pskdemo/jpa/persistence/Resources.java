@@ -16,9 +16,13 @@ public class Resources {
     private EntityManagerFactory emf;
 
     @Produces
+    // identifies producer method that creates an object that can be injected elsewhere
     @Default
+    // produced EntityManager is the default one to be injected
     @RequestScoped
+    // EntityManager instance will be created for each HTTP request
     private EntityManager createJTAEntityManager() {
+        // EntityManager will automatically join the JTA transaction.
         return emf.createEntityManager(SynchronizationType.SYNCHRONIZED);
     }
 

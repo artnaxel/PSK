@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</h:head>
+<h:body>
+    <h2>Students of #{studentsForGroup.studentGroup.title} group:</h2>
+    <ol>
+        <ui:repeat value="#{studentsForGroup.studentGroup.students}" var="student">
+            <li>
+                <h:link value="#{student.name} #{student.surname}" outcome="studentDetails?studentId=#{student.id}" styleClass="link" />
+            </li>
+        </ui:repeat>
+    </ol>
+    <h:form>
+        <div class="form-group">
+            <h:inputText a:placeholder="name" value="#{studentsForGroup.studentToCreate.name}" required="true" styleClass="form-control" />
+        </div>
+        <div class="form-group">
+            <h:inputText a:placeholder="surname" value="#{studentsForGroup.studentToCreate.surname}" required="true" styleClass="form-control" />
+        </div>
+
+        <h:commandButton value="Add student to the group"
+                         actionListener="#{studentsForGroup.createStudent()}"
+                         action="#{'students?faces-redirect=true&amp;studentGroupId='.concat(studentsForGroup.studentGroup.id)}"
+                         styleClass="command-button">
+            <f:param name="studentGroupId" value="#{studentsForGroup.studentGroup.id}" />
+        </h:commandButton>
+    </h:form>
+    <h:link outcome="index" value="Back to groups page" styleClass="link"/>
+</h:body>
+</html>

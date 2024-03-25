@@ -13,9 +13,10 @@ import java.util.List;
 
 @Model
 public class StudentGroupsMyBatis {
+
+    // injects a dao
     @Inject
     private StudentGroupMapper studentGroupMapper;
-
 
     @Getter
     private List<StudentGroup> allStudentGroups;
@@ -25,17 +26,17 @@ public class StudentGroupsMyBatis {
 
     @PostConstruct
     public void init() {
-        this.loadAllTeams();
+        this.loadAllStudentGroups();
     }
 
-    private void loadAllTeams() {
+    private void loadAllStudentGroups() {
         this.allStudentGroups = studentGroupMapper.selectAll();
     }
 
     @Transactional
     public String createStudentGroup() {
         studentGroupMapper.insert(studentGroup);
-        return "/myBatis/groups?faces-redirect=true";
+        return "/myBatis/studentGroups?faces-redirect=true";
     }
 
 }

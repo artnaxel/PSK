@@ -2,6 +2,8 @@ package org.vu.pskdemo.jpa.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
 
@@ -9,7 +11,8 @@ import java.util.List;
 @NamedQueries({
         @NamedQuery(name = "StudentGroup.findAll", query = "select g from StudentGroup as g")
 })
-@Data
+@Getter
+@Setter
 public class StudentGroup {
 
     @Id
@@ -25,6 +28,7 @@ public class StudentGroup {
     @Basic
     private Integer grade;
 
-    @OneToMany(mappedBy = "studentGroup")
+    @ManyToMany(mappedBy = "studentGroup")
     private List<Student> students;
+
 }

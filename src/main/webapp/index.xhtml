@@ -11,7 +11,7 @@
     <h2>Student Groups:</h2>
     <ol>
         <ui:repeat value="#{studentGroupJpa.allStudentGroups}" var="studentGroup">
-            <li><h:link value="#{studentGroup.title}" outcome="students?groupId=#{studentGroup.id}" /></li>
+            <li><h:link value="#{studentGroup.title}" outcome="students?studentGroupId=#{studentGroup.id}" /></li>
         </ui:repeat>
     </ol>
     <h:form>

@@ -24,7 +24,7 @@ public class StudentGroupJpa {
 
     @PostConstruct
     public void init(){
-        loadAllTeams();
+        loadAllStudentGroups();
     }
 
     @Transactional
@@ -32,7 +32,7 @@ public class StudentGroupJpa {
         this.studentGroupDao.persist(studentGroup);
     }
 
-    private void loadAllTeams(){
+    private void loadAllStudentGroups(){
         this.allStudentGroups = studentGroupDao.loadAll();
     }
 }

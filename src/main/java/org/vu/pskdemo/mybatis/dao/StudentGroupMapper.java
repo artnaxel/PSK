@@ -3,6 +3,7 @@ package org.vu.pskdemo.mybatis.dao;
 import java.util.List;
 
 import org.mybatis.cdi.Mapper;
+import org.vu.pskdemo.mybatis.model.Student;
 import org.vu.pskdemo.mybatis.model.StudentGroup;
 
 @Mapper
@@ -46,4 +47,5 @@ public interface StudentGroupMapper {
      * @mbg.generated Mon Mar 04 22:39:08 EET 2024
      */
     int updateByPrimaryKey(StudentGroup row);
+
 }

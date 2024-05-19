@@ -22,7 +22,10 @@ public class Student {
     @Basic(optional = false)
     private String surname;
 
-    @ManyToMany
+    @Column(name = "CARD_NUMBER")
+    private Integer cardNumber;
+
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
                 name = "Student_Group",
                 joinColumns = @JoinColumn(name = "student_id"),
@@ -36,5 +39,9 @@ public class Student {
             inverseJoinColumns = @JoinColumn(name = "course_id")
     )
     private List<Course> courses = new LinkedList<>();
+
+    @Version
+    @Column(name = "OPT_LOCK_VERSION")
+    private Integer version;
 
 }

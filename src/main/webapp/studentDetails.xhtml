@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</h:head>
+<h:body>
+    <h2>#{updateStudentDetails.student.name}</h2>
+    <h:form>
+        <div class="form-group">
+            <h:outputText value="Card number: " />
+            <h:inputText a:placeholder="Enter the value" value="#{updateStudentDetails.student.cardNumber}" required="true" styleClass="form-control"/>
+        </div>
+        <h:commandButton value="Update" action="#{updateStudentDetails.updateStudentCardNumber()}" styleClass="command-button">
+            <f:param name="studentId" value="#{updateStudentDetails.student.id}" />
+        </h:commandButton>
+        <h:outputText value="Value was already modified by other user. If you want to override it - try again" rendered="#{param['error'] == 'optimistic-lock-exception'}" />
+    </h:form>
+    <h:form>
+        <h:outputText value="#{generateStudentCardNumber.cardGenerationStatus}" />
+        <h:commandButton value="Generate student card number?" disabled="#{generateStudentCardNumber.cardGenerationRunning}" action="#{generateStudentCardNumber.generateNewCardNumber()}" styleClass="command-button">
+            <f:param name="studentId" value="#{updateStudentDetails.student.id}" />
+        </h:commandButton>
+    </h:form>
+    <h:link outcome="index" value="Back to home page" styleClass="link"/>
+</h:body>
+</html>

@@ -10,26 +10,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc2afabe-44d3-4cab-9aa8-a5dbdd710883" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/usecases/StudentsForGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/usecases/StudentsForGroupMyBatis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/myBatis/students.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/students.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/interceptors/LoggedInvocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/rest/ApiConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/rest/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/rest/dto/StudentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/CardNumberGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/usecases/GenerateStudentCardNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/usecases/UpdateStudentDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/studentDetails.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b7263c9-77b3-4e24-a4c7-df4b515be0a5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5b7263c9-77b3-4e24-a4c7-df4b515be0a5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/entities/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/entities/StudentGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/entities/StudentGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/persistence/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/persistence/Resources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/persistence/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/persistence/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/usecases/StudentGroupJpa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/usecases/StudentGroupJpa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/StudentGroupMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/StudentGroupMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/StudentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/usecases/StudentGroupsMyBatis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/usecases/StudentGroupsMyBatis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/CourseMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/MyBatisResources.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/StudentGroupMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/StudentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/model/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/model/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/model/StudentGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/usecases/StudentGroupsMyBatis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/usecases/StudentsForGroupMyBatis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/MyBatisConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/CourseMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/StudentGroupMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/StudentMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/myBatis/studentGroups.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/myBatis/studentGroups.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/myBatis/studentGroups.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/myBatis/students.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/students.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/students.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,30 +80,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JBoss/WildFly Server.JBoss/WildFly 31.0.0.Final.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "Errors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JBoss/WildFly Server.JBoss/WildFly 31.0.0.Final.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.PskDemo [org.mybatis.generator:mybatis-generator-maven-plugin:1.4.2:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "h2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.vu.pskdemo.entities" />
@@ -202,7 +213,16 @@
       <workItem from="1709824199410" duration="3615000" />
       <workItem from="1709894142721" duration="2213000" />
       <workItem from="1711352902031" duration="3876000" />
-      <workItem from="1711365520239" duration="14529000" />
+      <workItem from="1711365520239" duration="17934000" />
+      <workItem from="1712145298343" duration="731000" />
+      <workItem from="1713432932025" duration="466000" />
+      <workItem from="1713515981623" duration="1190000" />
+      <workItem from="1714560256512" duration="6000" />
+      <workItem from="1714560663824" duration="14000" />
+      <workItem from="1714562069405" duration="7000" />
+      <workItem from="1714562107461" duration="595000" />
+      <workItem from="1716041674453" duration="8419000" />
+      <workItem from="1716132569219" duration="3239000" />
     </task>
     <servers />
   </component>

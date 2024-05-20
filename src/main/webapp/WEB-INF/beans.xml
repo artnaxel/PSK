@@ -13,7 +13,7 @@
         <class>org.vu.pskdemo.jpa.services.pass.AlternativePassNumberGenerator</class>
     </alternatives>
     <decorators>
-        <class>org.vu.pskdemo.jpa.services.grade.LoggingGradeCalculator</class>
+        <class>org.vu.pskdemo.jpa.services.grade.RoundingDecorator</class>
     </decorators>
 
 </beans>

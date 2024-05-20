@@ -169,7 +169,7 @@
     <schema id="162" parent="2" name="INFORMATION_SCHEMA"/>
     <schema id="163" parent="2" name="PUBLIC">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-05-20.09:36:02</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-05-20.12:56:16</LastIntrospectionLocalTimestamp>
     </schema>
     <user id="164" parent="2" name="SA">
       <Admin>1</Admin>
@@ -214,7 +214,7 @@
       <Position>1</Position>
       <SequenceInline>1</SequenceInline>
       <SequenceDasType>BIGINT|0s</SequenceDasType>
-      <SequenceSequenceIdentity>1(2)</SequenceSequenceIdentity>
+      <SequenceSequenceIdentity>1(1)</SequenceSequenceIdentity>
       <SequenceStartValue>1</SequenceStartValue>
     </column>
     <column id="175" parent="166" name="NAME">
@@ -267,7 +267,7 @@
       <Position>1</Position>
       <SequenceInline>1</SequenceInline>
       <SequenceDasType>BIGINT|0s</SequenceDasType>
-      <SequenceSequenceIdentity>1(3)</SequenceSequenceIdentity>
+      <SequenceSequenceIdentity>1(2)</SequenceSequenceIdentity>
       <SequenceStartValue>1</SequenceStartValue>
     </column>
     <column id="185" parent="167" name="CAPACITY">

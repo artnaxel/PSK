@@ -10,34 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc2afabe-44d3-4cab-9aa8-a5dbdd710883" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/interceptors/LoggedInvocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/rest/ApiConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/rest/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/rest/dto/StudentDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/CardNumberGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/usecases/GenerateStudentCardNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/usecases/UpdateStudentDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/studentDetails.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/interceptors/MethodLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/grade/BaseGradeCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/grade/GradeCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/grade/HonorsGradeCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/grade/LoggingGradeCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/pass/AlternativePassNumberGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/pass/PassNumberGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/usecases/CalculateStudentGrade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/studentGrades.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b7263c9-77b3-4e24-a4c7-df4b515be0a5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5b7263c9-77b3-4e24-a4c7-df4b515be0a5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/entities/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/entities/Course.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/entities/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/CourseMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/MyBatisResources.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/StudentGroupMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/dao/StudentMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/model/Course.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/model/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/model/StudentGroup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/usecases/StudentGroupsMyBatis.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/mybatis/usecases/StudentsForGroupMyBatis.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/MyBatisConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/CourseMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/StudentGroupMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/StudentMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/myBatis/studentGroups.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/myBatis/students.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/persistence/StudentGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/persistence/StudentGroupDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/rest/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/rest/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/rest/dto/StudentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/rest/dto/StudentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/CardNumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/pass/BasePassNumberGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/usecases/GenerateStudentCardNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/usecases/GeneratePassNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/studentDetails.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/studentDetails.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/students.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/students.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
     </list>
@@ -222,7 +214,8 @@
       <workItem from="1714562069405" duration="7000" />
       <workItem from="1714562107461" duration="595000" />
       <workItem from="1716041674453" duration="8419000" />
-      <workItem from="1716132569219" duration="3239000" />
+      <workItem from="1716132569219" duration="7687000" />
+      <workItem from="1716188930658" duration="10016000" />
     </task>
     <servers />
   </component>

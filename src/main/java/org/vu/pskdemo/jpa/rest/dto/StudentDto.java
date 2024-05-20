@@ -9,7 +9,9 @@ public class StudentDto {
 
     private String name;
 
-    private Integer cardNumber;
+    private String surname;
+
+    private Integer passNumber;
 
     private List<String> groupName;
 }

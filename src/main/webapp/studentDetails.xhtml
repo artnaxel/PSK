@@ -5,14 +5,14 @@
       xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
       xmlns:f="http://java.sun.com/jsf/core">
 <h:head>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </h:head>
 <h:body>
     <h2>#{updateStudentDetails.student.name}</h2>
     <h:form>
         <div class="form-group">
             <h:outputText value="Card number: " />
-            <h:inputText a:placeholder="Enter the value" value="#{updateStudentDetails.student.cardNumber}" required="true" styleClass="form-control"/>
+            <h:inputText a:placeholder="Enter the value" value="#{updateStudentDetails.student.passNumber}" required="true" styleClass="form-control"/>
         </div>
         <h:commandButton value="Update" action="#{updateStudentDetails.updateStudentCardNumber()}" styleClass="command-button">
             <f:param name="studentId" value="#{updateStudentDetails.student.id}" />
@@ -20,11 +20,14 @@
         <h:outputText value="Value was already modified by other user. If you want to override it - try again" rendered="#{param['error'] == 'optimistic-lock-exception'}" />
     </h:form>
     <h:form>
-        <h:outputText value="#{generateStudentCardNumber.cardGenerationStatus}" />
-        <h:commandButton value="Generate student card number?" disabled="#{generateStudentCardNumber.cardGenerationRunning}" action="#{generateStudentCardNumber.generateNewCardNumber()}" styleClass="command-button">
+        <h:outputText value="#{generatePassNumber.passGenerationStatus}" />
+        <h:commandButton value="Generate student card number?" disabled="#{generatePassNumber.passGenerationRunning}" action="#{generatePassNumber.generateNewPassNumber()}" styleClass="command-button">
             <f:param name="studentId" value="#{updateStudentDetails.student.id}" />
         </h:commandButton>
     </h:form>
+    <h:link outcome="studentGrades" value="Final Grade Calculator" styleClass="link">
+        <f:param name="studentId" value="#{updateStudentDetails.student.id}" />
+    </h:link>
     <h:link outcome="index" value="Back to home page" styleClass="link"/>
 </h:body>
 </html>

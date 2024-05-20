@@ -14,15 +14,12 @@ public class Course {
     private Long id;
 
     @Basic(optional = false)
-    private String title;
-
-    @Basic(optional = false)
     private Integer capacity;
 
     @Basic
     private Integer grade;
 
-    @ManyToMany(mappedBy = "courses")
+    @OneToMany(mappedBy = "course")
     private List<Student> students;
 
 }

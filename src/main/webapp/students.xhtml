@@ -12,7 +12,7 @@
     <ol>
         <ui:repeat value="#{studentsForGroup.studentGroup.students}" var="student">
             <li>
-                <h:link value="#{student.name} #{student.surname} #{student.cardNumber}" outcome="studentDetails?studentId=#{student.id}" styleClass="link" />
+                <h:link value="#{student.name} #{student.surname} #{student.passNumber}" outcome="studentDetails?studentId=#{student.id}" styleClass="link" />
             </li>
         </ui:repeat>
     </ol>

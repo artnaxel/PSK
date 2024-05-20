@@ -169,10 +169,162 @@
     <schema id="162" parent="2" name="INFORMATION_SCHEMA"/>
     <schema id="163" parent="2" name="PUBLIC">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-05-19.16:27:26</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-05-20.09:36:02</LastIntrospectionLocalTimestamp>
     </schema>
     <user id="164" parent="2" name="SA">
       <Admin>1</Admin>
     </user>
+    <table id="165" parent="163" name="COURSE"/>
+    <table id="166" parent="163" name="STUDENT"/>
+    <table id="167" parent="163" name="STUDENTGROUP"/>
+    <table id="168" parent="163" name="STUDENT_GROUP"/>
+    <column id="169" parent="165" name="ID">
+      <ColumnKind>generated-stored</ColumnKind>
+      <DasType>BIGINT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceInline>1</SequenceInline>
+      <SequenceDasType>BIGINT|0s</SequenceDasType>
+      <SequenceSequenceIdentity>1(1)</SequenceSequenceIdentity>
+      <SequenceStartValue>1</SequenceStartValue>
+    </column>
+    <column id="170" parent="165" name="CAPACITY">
+      <DasType>INTEGER|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="171" parent="165" name="GRADE">
+      <DasType>INTEGER|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <index id="172" parent="165" name="PRIMARY_KEY_7">
+      <ColNames>ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <key id="173" parent="165" name="CONSTRAINT_7">
+      <ColNames>ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="174" parent="166" name="ID">
+      <ColumnKind>generated-stored</ColumnKind>
+      <DasType>BIGINT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceInline>1</SequenceInline>
+      <SequenceDasType>BIGINT|0s</SequenceDasType>
+      <SequenceSequenceIdentity>1(2)</SequenceSequenceIdentity>
+      <SequenceStartValue>1</SequenceStartValue>
+    </column>
+    <column id="175" parent="166" name="NAME">
+      <DasType>CHARACTER VARYING(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="176" parent="166" name="PASS_NUMBER">
+      <DasType>INTEGER|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="177" parent="166" name="SURNAME">
+      <DasType>CHARACTER VARYING(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="178" parent="166" name="OPT_LOCK_VERSION">
+      <DasType>INTEGER|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="179" parent="166" name="COURSE_ID">
+      <DasType>BIGINT|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <foreign-key id="180" parent="166" name="FKSKL2QAEAHBTUYPYKFE0HS4MN">
+      <ColNames>COURSE_ID</ColNames>
+      <OnDelete>restrict</OnDelete>
+      <OnUpdate>restrict</OnUpdate>
+      <RefKeyName>CONSTRAINT_7</RefKeyName>
+      <RefTableName>COURSE</RefTableName>
+    </foreign-key>
+    <index id="181" parent="166" name="PRIMARY_KEY_B">
+      <ColNames>ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <index id="182" parent="166" name="FKSKL2QAEAHBTUYPYKFE0HS4MN_INDEX_B">
+      <ColNames>COURSE_ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+    </index>
+    <key id="183" parent="166" name="CONSTRAINT_B">
+      <ColNames>ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="184" parent="167" name="ID">
+      <ColumnKind>generated-stored</ColumnKind>
+      <DasType>BIGINT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceInline>1</SequenceInline>
+      <SequenceDasType>BIGINT|0s</SequenceDasType>
+      <SequenceSequenceIdentity>1(3)</SequenceSequenceIdentity>
+      <SequenceStartValue>1</SequenceStartValue>
+    </column>
+    <column id="185" parent="167" name="CAPACITY">
+      <DasType>INTEGER|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="186" parent="167" name="GRADE">
+      <DasType>INTEGER|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="187" parent="167" name="TITLE">
+      <DasType>CHARACTER VARYING(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="188" parent="167" name="PRIMARY_KEY_8">
+      <ColNames>ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <key id="189" parent="167" name="CONSTRAINT_8">
+      <ColNames>ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="190" parent="168" name="STUDENT_ID">
+      <DasType>BIGINT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="191" parent="168" name="STUDENTGROUP_ID">
+      <DasType>BIGINT|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <foreign-key id="192" parent="168" name="FKL3HMGR7RT94FOWFK5JAQR19P5">
+      <ColNames>STUDENT_ID</ColNames>
+      <OnDelete>restrict</OnDelete>
+      <OnUpdate>restrict</OnUpdate>
+      <RefKeyName>CONSTRAINT_B</RefKeyName>
+      <RefTableName>STUDENT</RefTableName>
+    </foreign-key>
+    <foreign-key id="193" parent="168" name="FKN19I3RNY9M1LFV4YHQTWA23A4">
+      <ColNames>STUDENTGROUP_ID</ColNames>
+      <OnDelete>restrict</OnDelete>
+      <OnUpdate>restrict</OnUpdate>
+      <RefKeyName>CONSTRAINT_8</RefKeyName>
+      <RefTableName>STUDENTGROUP</RefTableName>
+    </foreign-key>
+    <index id="194" parent="168" name="FKL3HMGR7RT94FOWFK5JAQR19P5_INDEX_C">
+      <ColNames>STUDENT_ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+    </index>
+    <index id="195" parent="168" name="FKN19I3RNY9M1LFV4YHQTWA23A4_INDEX_C">
+      <ColNames>STUDENTGROUP_ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+    </index>
   </database-model>
 </dataSource>

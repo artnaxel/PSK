@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+    <title>Calculate Final Grade</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</h:head>
+<h:body>
+    <h2>Calculate Final Grade</h2>
+    <h:form>
+        <div class="form-group">
+            <h:outputLabel value="Assignment Score: " />
+            <h:inputText value="#{calculateStudentGrade.assignmentScore}" required="true" />
+        </div>
+        <div class="form-group">
+            <h:outputLabel value="Exam Score: " />
+            <h:inputText value="#{calculateStudentGrade.examScore}" required="true" />
+        </div>
+        <h:commandButton value="Calculate" action="#{calculateStudentGrade.calculateFinalGrade}" />
+        <h:outputText value="Final Grade: #{calculateStudentGrade.finalGrade}" />
+    </h:form>
+    <h:link outcome="index" value="Back to Home" styleClass="link"/>
+</h:body>
+</html>

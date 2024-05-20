@@ -9,9 +9,9 @@
     <interceptors>
         <class>org.vu.pskdemo.jpa.interceptors.MethodLogger</class>
     </interceptors>
-    <alternatives>
-        <class>org.vu.pskdemo.jpa.services.pass.AlternativePassNumberGenerator</class>
-    </alternatives>
+<!--    <alternatives>-->
+<!--        <class>org.vu.pskdemo.jpa.services.pass.AlternativePassNumberGenerator</class>-->
+<!--    </alternatives>-->
     <decorators>
         <class>org.vu.pskdemo.jpa.services.grade.RoundingDecorator</class>
     </decorators>

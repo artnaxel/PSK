@@ -10,16 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc2afabe-44d3-4cab-9aa8-a5dbdd710883" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/qualifiers/RoundGrade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/grade/RoundingDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b7263c9-77b3-4e24-a4c7-df4b515be0a5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5b7263c9-77b3-4e24-a4c7-df4b515be0a5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/grade/BaseGradeCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/grade/BaseGradeCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/grade/HonorsGradeCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/grade/HonorsGradeCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/grade/LoggingGradeCalculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/usecases/CalculateStudentGrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/usecases/CalculateStudentGrade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/pass/PassNumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/services/pass/PassNumberGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/usecases/GeneratePassNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vu/pskdemo/jpa/usecases/GeneratePassNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/studentGrades.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/studentGrades.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +198,8 @@
       <workItem from="1714562107461" duration="595000" />
       <workItem from="1716041674453" duration="8419000" />
       <workItem from="1716132569219" duration="7687000" />
-      <workItem from="1716188930658" duration="16944000" />
+      <workItem from="1716188930658" duration="20502000" />
+      <workItem from="1716217271433" duration="3141000" />
     </task>
     <servers />
   </component>

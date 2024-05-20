@@ -1,8 +1,10 @@
 package org.vu.pskdemo.jpa.usecases;
+import jakarta.ejb.Asynchronous;
 import jakarta.enterprise.context.SessionScoped;
 import jakarta.faces.context.FacesContext;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
+import jakarta.transaction.Transactional;
 import org.vu.pskdemo.jpa.interceptors.LoggedInvocation;
 import org.vu.pskdemo.jpa.services.pass.PassNumberGenerator;
 
@@ -20,17 +22,20 @@ public class GeneratePassNumber implements Serializable {
     private CompletableFuture<Integer> passNumberGeneratorTask = null;
 
     @LoggedInvocation
+    @Transactional
     public String generateNewPassNumber() {
         Map<String, String> requestParameters =
                 FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap();
 
-        passNumberGeneratorTask = CompletableFuture.supplyAsync(() -> passNumberGenerator.generatePassNumber());
+        if (passNumberGeneratorTask == null) {
+            passNumberGeneratorTask = CompletableFuture.supplyAsync(() -> passNumberGenerator.generatePassNumber());
+        }
 
         return  "/studentDetails.xhtml?faces-redirect=true&studentId=" + requestParameters.get("studentId");
     }
 
     public boolean isPassGenerationRunning() {
-        return passNumberGeneratorTask != null && passNumberGeneratorTask.isDone();
+        return passNumberGeneratorTask != null && !passNumberGeneratorTask.isDone();
     }
 
     public String getPassGenerationStatus() throws ExecutionException, InterruptedException {

@@ -11,6 +11,6 @@ public class HonorsGradeCalculator extends BaseGradeCalculator {
     public double calculateFinalGrade(double assignmentScore, double examScore) {
         System.out.println("Using imitation (@specializes) implementation of grade calculator.");
         double baseGrade = super.calculateFinalGrade(assignmentScore, examScore);
-        return baseGrade + 0.1;
+        return baseGrade + 0.5;
     }
 }
